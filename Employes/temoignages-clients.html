@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les témoignages des clients</title>
+    <link rel="stylesheet" href="/style.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="text-right mb-4">
+            <a href="conexion-employes.html" class="btn btn-primary">Accueil Admin</a>
+        </div>
+        <h1 class="my-4">Gérer les témoignages des clients</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>Témoignage 4</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nom1">Nom</label>
+                        <input type="text" class="form-control" id="nom1" value="Dubois" disabled>
+
+                        <label for="prenom1">Prénom</label>
+                        <input type="text" class="form-control" id="prenom1" value="Pierre" disabled>
+
+                        <label for="testimonial1">Témoignage du client</label>
+                        <textarea class="form-control" id="testimonial1" rows="3" disabled>Je suis totalement satisfait du service ! J'ai récemment acheté une voiture d'occasion en excellent état à un prix très compétitif. Je recommande vivement cette entreprise pour tous ceux qui recherchent un véhicule de qualité.</textarea>
+
+                        <label for="rating1">Note</label>
+                        <input id="rating1" name="rating1" class="rating" data-min="0" data-max="5" data-step="1" value="5" disabled>
+                    </div>
+                    <button type="button" class="btn btn-success m-3">Approuver</button>
+                    <button type="button" class="btn btn-danger m-3">Refuser</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>Témoignage 3</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nom1">Nom</label>
+                        <input type="text" class="form-control" id="nom1" value="Jean" disabled>
+
+                        <label for="prenom1">Prénom</label>
+                        <input type="text" class="form-control" id="prenom1" value="Dupont" disabled>
+
+                        <label for="testimonial1">Témoignage du client</label>
+                        <textarea class="form-control" id="testimonial1" rows="3" disabled>Excellent service! J'ai acheté une voiture d'occasion en très bon état et à un bon prix. Je recommande vivement cette entreprise.</textarea>
+
+                        <label for="rating1">Note</label>
+                        <input id="rating1" name="rating1" class="rating" data-min="0" data-max="5" data-step="1" value="5" disabled>
+                    </div>
+                    <button type="button" class="btn btn-success m-3" disabled>Approuvé</button>
+                </form>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>Témoignage 2</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nom2">Nom</label>
+                        <input type="text" class="form-control" id="nom2" value="Marie" disabled>
+
+                        <label for="prenom2">Prénom</label>
+                        <input type="text" class="form-control" id="prenom2" value="Leblanc" disabled>
+
+                        <label for="testimonial2">Témoignage du client</label>
+                        <textarea class="form-control" id="testimonial2" rows="3" disabled>Une grande variété de voitures et un personnel très serviable. Ils m'ont aidé à choisir la voiture parfaite pour moi.</textarea>
+
+                        <label for="rating2">Note</label>
+                        <input id="rating2" name="rating2" class="rating" data-min="0" data-max="5" data-step="1" value="5" disabled>
+                    </div>
+                    <button type="button" class="btn btn-success m-3" disabled>Approuvé</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>Témoignage 1</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nom3">Nom</label>
+                        <input type="text" class="form-control" id="nom3" value="Pierre" disabled>
+
+                        <label for="prenom2">Prénom</label>
+                        <input type="text" class="form-control" id="prenom3" value="Martin" disabled>
+
+                        <label for="testimonial3">Témoignage du client</label>
+                        <textarea class="form-control" id="testimonial3" rows="3" disabled>Je suis très satisfait de ma nouvelle voiture. Le processus d'achat a été simple et rapide. Merci beaucoup!</textarea>
+
+                        <label for="rating3">Note</label>
+                        <input id="rating3" name="rating3" class="rating" data-min="0" data-max="5" data-step="1" value="5" disabled>
+                    </div>
+                    <button type="button" class="btn btn-success m-3" disabled>Approuvé</button>
+                </form>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#rating1').barrating({
+                theme: 'fontawesome-stars',
+                readonly: true
+            });
+            console.log("Rating script initialized");  
+        });
+    </script>
+</body>
+</html>

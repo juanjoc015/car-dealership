@@ -1,0 +1,134 @@
+<?php 
+    $id = $_GET["id"];
+
+    // il faut aller demander à la base de données
+
+    $voitureName = "NULL";
+
+    if ($id == 1) {
+        $voitureName = "Volkswagen";
+    } else if ($id == 2) {
+        $voitureName = "Audi";
+    }
+    
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Garage d'automobiles Vincent Parrot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand title" href="index.html"><span class="project-name">Garage d'automobiles Vincent
+                        Parrot</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="elements-menu">Accueil</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="elements-menu">Services</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><span class="elements-menu">Véhicules</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><span class="elements-menu">Contact</span></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit"><span
+                                class="button-search">Rechercher</span></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h2 class="h2-cars">Véhicules d'occasion</h2>
+            <div class="vehicle-list row">
+                <!-- Aquí puedes mostrar los vehículos de ocasión disponibles -->
+                <div class="vehicle-item col-lg-12 col-md-5">
+                    <div class="card h-100">
+                        <img src="IMG/w-polo1.2.jpg" alt="Car 1" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title"><?php echo $voitureName; ?></h3>
+                            <p class="card-text">Ce Volkswagen Polo 2009 est un véhicule compact et économe, idéal pour la ville. Il est en bon état et n'a parcouru que 50500 km.</p>
+                            <p class="card-text">Année: 2009</p>
+                            <p class="card-text">kilométrage: 50500 km</p>
+                            <p class="card-text price">Prix: 9000 €</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <!-- About section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>About Us</h5>
+                    <p>AutoMoto, votre concessionnaire de confiance depuis 2000. Nous proposons une large sélection de
+                        véhicules
+                        d'occasion de qualité.</p>
+                </div>
+                <!-- Quick Links section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Acceuil</a></li>
+                        <li><a href="#" class="text-white">Véhicules d'occasion</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <!-- Opening Hours section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Horaires d'ouverture</h5>
+                    <ul class="list-unstyled">
+                        <li>Lundi - Vendredi: 8h00 - 18h00</li>
+                        <li>Samedi: 9h00 - 17h00</li>
+                        <li>Dimanche: Fermé</li>
+                    </ul>
+                </div>
+                <!-- Contact Us section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contactez-nous</h5>
+                    <p>123 Rue de l'Automobile, 75000 Paris, France</p>
+                    <p>Email: info@automoto.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 bg-dark text-white">&copy; 2023 AutoMoto. Tous droits réservés.</div>
+    </footer>
+
+
+</body>
+
+</html>

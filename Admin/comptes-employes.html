@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les comptes des employés</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="text-right mb-4">
+            <a href="conexion-admin.html" class="btn btn-primary">Accueil Admin</a>
+        </div>
+        <h1 class="my-4">Gérer les comptes des employés</h1>
+
+        <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#nouveauEmployeeModal">Ajouter un employé</button>
+        <!-- Modal -->
+        <div class="modal fade" id="nouveauEmployeeModal" tabindex="-1" role="dialog" aria-labelledby="nouveauEmployeeModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="nouveauEmployeeModalLabel">Ajouter un employé</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="nouveauEmployeeForm">
+                            <div class="form-group">
+                                <label for="nom">Nom</label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" class="form-control" id="prenom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de passe</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Ajouter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rousseau</td>
+                    <td>Julien</td>
+                    <td>Julien.Rousseau@example.com</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lefebvre</td>
+                    <td>Sophie</td>
+                    <td>Sophie.Lefebvre@example.com</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Martin</td>
+                    <td>Alexandre </td>
+                    <td>Alexandre.Martin@example.com</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

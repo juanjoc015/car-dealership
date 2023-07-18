@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="text-right mb-4">
+            <a href="conexion-admin.html" class="btn btn-primary">Accueil Admin</a>
+        </div>
+        
+        <h1 class="text-center my-4">Gérer les services</h1>
+        <div class="text-center mb-4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nouveauServiceModal">Nouveau service</button>
+            <!-- Modal -->
+            <div class="modal fade" id="nouveauServiceModal" tabindex="-1" role="dialog" aria-labelledby="nouveauServiceModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="nouveauServiceModalLabel">Nouveau service</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div id="services"></div>
+                            <div class="modal-body">
+                                <form id="nouveauServiceForm">
+                                    <div class="form-group">
+                                        <label for="titre">Titre du service</label>
+                                        <input type="text" class="form-control" id="titre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Description du service</label>
+                                        <textarea class="form-control" id="description" rows="6" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Créer un service</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4">
+                <div class="card-header">
+                <form>
+                    <div class="form-group">
+                        <label for="titreService1">Titre du service</label>
+                        <input type="text" class="form-control" id="titreService1" value="Entretien de voitures" required>
+                    </div>
+                        
+                    </form>
+
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="service1">Description du service</label>
+                            <textarea class="form-control" id="service1" rows="3">Nous offrons des services d'entretien régulier pour assurer le bon fonctionnement de votre véhicule.</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </form>
+                </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <form>
+                    <div class="form-group">
+                        <label for="titreService2">Titre du service</label>
+                        <input type="text" class="form-control" id="titreService2" value="Reparations automobiles" required>
+                    </div>
+                </form>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="service2">Description du service</label>
+                        <textarea class="form-control" id="service2" rows="3">Notre équipe de techniciens qualifiés peut diagnostiquer et réparer tous les problèmes que votre voiture pourrait rencontrer.</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                <form>
+                    <div class="form-group">
+                        <label for="titreService3">Titre du service</label>
+                        <input type="text" class="form-control" id="titreService3" value="Vente de voitures d'occasion" required>
+                    </div>
+                </form>>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="service3">Description du service</label>
+                        <textarea class="form-control" id="service3" rows="3">Nous proposons une large gamme de véhicules d'occasion de qualité à des prix compétitifs.</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Mettre à jour</button>
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

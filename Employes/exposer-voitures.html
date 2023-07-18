@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposer les voitures d'occasion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="text-right mb-4">
+            <a href="conexion-employes.html" class="btn btn-primary">Accueil Admin</a>
+        </div>
+        <h1 class="my-4">Exposer les voitures d'occasion</h1>
+
+        <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#carForm">Ajouter une voiture</button>
+        <!-- Modal -->
+        <div class="modal fade" id="carForm" tabindex="-1" role="dialog" aria-labelledby="carFormLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="carFormLabel">Ajouter une voiture</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                            <label for="carImage" class="col-form-label">Image de la voiture:</label>
+                            <input type="file" class="form-control" id="carImage" accept="image/*">
+                      </div>
+                      <div class="form-group">
+                        <label for="carName" class="col-form-label">Nom de la voiture:</label>
+                        <input type="text" class="form-control" id="carName">
+                      </div>
+                      <div class="form-group">
+                        <label for="carDescription" class="col-form-label">Description:</label>
+                        <textarea class="form-control" id="carDescription"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="carYear" class="col-form-label">Année:</label>
+                        <input type="number" class="form-control" id="carYear" min="1886" max="2099">
+                    </div>
+                    <div class="form-group">
+                        <label for="carKm" class="col-form-label">Kilométrage:</label>
+                        <input type="number" class="form-control" id="carKm" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="carPrice" class="col-form-label">Prix:</label>
+                        <input type="number" class="form-control" id="carPrice" min="0">
+                    </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Sauvegarder</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/w-polo1.2.jpg" alt="car 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Volkswagen Polo 1.2 tsi 90 bmt</h5>
+                        <p class="card-text">Ce Volkswagen Polo 2009 est un véhicule compact et économe, idéal pour la ville. Il est en bon état et n'a parcouru que 50500 km.</p>
+                        <p class="card-text">Année: 2009</p>
+                        <p class="card-text">kilométrage: 50500 km</p>
+                        <p class="card-text price">Prix: 9000 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/audi-tt.jpg" alt="car2">
+                    <div class="card-body">
+                        <h5 class="card-title">Audi TT 1.8T</h5>
+                        <p class="card-text">Voici une superbe Audi TT 2006 avec 120000 km. Une voiture de sport élégante et performante qui offre une expérience de conduite impressionnante.</p>
+                        <p class="card-text">Année: 2006</p>
+                        <p class="card-text">Kilométrage: 120000 km</p>
+                        <p class="card-text price">Prix: 12000 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/toyota.jpg" alt="car3">
+                    <div class="card-body">
+                        <h5 class="card-title">TOYOTA C-HR 1.8 HYBRIDE 122</h5>
+                        <p class="card-text">Voici une Toyota C-HR 1.8 Hybride 122 de 2017 avec 120000 km. Un véhicule hybride performant offrant confort et économies.</p>
+                        <p class="card-text">Année: 2017</p>
+                        <p class="card-text">kilométrage: 120000 km</p>
+                        <p class="card-text price">Prix: 20000 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/bmw-1.jpg" alt="car4">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW X6 M50d 381 ch A</h5>
+                        <p class="card-text">Voici une superbe BMW X6 M50d 381 ch A de 2015 avec 112000 km. Un SUV puissant qui offre confort et performance de haut niveau.</p>
+                        <p class="card-text">Année: 2015</p>
+                        <p class="card-text">kilométrage: 112000 km</p>
+                        <p class="card-text price">Prix: 42000 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/audii-2.jpg" alt="car4">
+                    <div class="card-body">
+                        <h5 class="card-title">AUDI A3 IV SPORTBACK</h5>
+                        <p class="card-text">Découvrez la splendide AUDI A3 IVSportback, un concentré de sophistication.cette berline compacte ne manquera pas de captiver tous les regards.</p>
+                        <p class="card-text">Année: 2020</p>
+                        <p class="card-text">kilométrage: 44114 km</p>
+                        <p class="card-text price">Prix: 34590 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/golf.jpg" alt="car4">
+                    <div class="card-body">
+                        <h5 class="card-title">VOLKSWAGEN GOLF VIII</h5>
+                        <p class="card-text">Découvrez la nouvelle VOLKSWAGEN GOLF VIII, une berline compacte qui allie style, confort et performances exceptionnelles.</p>
+                        <p class="card-text">Année: 2022</p>
+                        <p class="card-text">kilométrage: 40114 km</p>
+                        <p class="card-text price">Prix: 24590 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/bmw2.jpg" alt="car4">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW Z4 G29</h5>
+                        <p class="card-text">Découvrez le BMW Z4 G29, un roadster sportif qui allie élégance et puissance. Avec son design raffiné, Cette voiture offre une expérience de conduite exceptionnelle.</p>
+                        <p class="card-text">Année: 2015</p>
+                        <p class="card-text">kilométrage: 112000 km</p>
+                        <p class="card-text price">Prix: 42000 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="../IMG/toyota3.jpg" alt="car4">
+                    <div class="card-body">
+                        <h5 class="card-title">TOYOTA YARIS III phase 3</h5>
+                        <p class="card-text">La Yaris nouvelle génération, un mélange parfait de design, de fiabilité et de confort pour une expérience de conduite remarquable.</p>
+                        <p class="card-text">Année: 2019</p>
+                        <p class="card-text">kilométrage: 25114 km</p>
+                        <p class="card-text price">Prix: 12590 €</p>
+                        <button type="button" class="btn btn-primary">Éditer</button>
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
