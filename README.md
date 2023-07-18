@@ -6,3 +6,4 @@
 
 taper: git clone xxxx
 
+2) Importer la base de donner depuis le fichier database.sql
