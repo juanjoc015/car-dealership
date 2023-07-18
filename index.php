@@ -11,8 +11,8 @@ $sql = "SELECT * FROM voitures LIMIT 4";
 
 $result = mysqli_query($con, $sql);
 
-$sqlService = "SELECT * FROM ...";
-$resultServices = mysqli_query($con, $sqlService);
+// $sqlService = "SELECT * FROM ...";
+// $resultServices = mysqli_query($con, $sqlService);
 
 ?>
 <!DOCTYPE html>
