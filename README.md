@@ -26,7 +26,7 @@ Cette plateforme en ligne permet aux utilisateurs de rechercher, comparer et ach
 - Processus d'achat en ligne.
 - Réservation de voitures.
 
-## Démostration 
+## Démonstration 
 **lien**: <br> https://juanjosecruzcano.fr/
 <br><br><br><br>
 ![Description de l'image](Accueil.PNG) 
