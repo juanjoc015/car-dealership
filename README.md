@@ -26,6 +26,14 @@ Cette plateforme en ligne permet aux utilisateurs de rechercher, comparer et ach
 - Processus d'achat en ligne.
 - Réservation de voitures.
 
+## Démostration
+-lien: https://juanjosecruzcano.fr/
+/Accueil.PNG
+/Vehicules.PNG
+/Contact.PNG
+/Formulaire.PNG
+
+
 
 ## Exigences du Projet
 
@@ -51,7 +59,7 @@ Ouvrez le fichier `index.php` et `vehicules.php` situé à la racine de votre pr
 Recherchez la section contenant les informations de connexion à la base de données. Elle pourrait ressembler à ceci : \
 ```$con = new mysqli("127.0.0.1", "root", "", "concesionario");```
 
-Importez le fichier SQL fourni avec votre projet dans votre base de données nouvellement créée. Vous pouvez le faire via l'interface de phpMyAdmin en sélectionnant votre base de données, puis en utilisant l'option d'importation pour charger le fichier SQL.
+Importez le fichier SQL fourni `database.sql`  dans votre base de données nouvellement créée. Vous pouvez le faire via l'interface de phpMyAdmin en sélectionnant votre base de données, puis en utilisant l'option d'importation pour charger le fichier SQL.
 
 Mettez à jour les informations de connexion à la base de données dans votre projet PHP, si nécessaire, pour refléter les paramètres de votre environnement local.
 Suivez les étapes ci-dessous pour exécuter votre projet PHP avec WAMP ou XAMPP :
