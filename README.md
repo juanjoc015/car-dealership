@@ -27,7 +27,7 @@ Cette plateforme en ligne permet aux utilisateurs de rechercher, comparer et ach
 - Réservation de voitures.
 
 ## Démostration 
-**lien**: https://juanjosecruzcano.fr/ &nbsp 
+**lien**: https://juanjosecruzcano.fr/ <br>
 ![Description de l'image](Accueil.PNG) 
 ![Description de l'image](Vehicules.PNG)
 ![Description de l'image](Contact.PNG)
