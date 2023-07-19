@@ -48,7 +48,8 @@ Après avoir configuré votre environnement de développement avec WAMP ou XAMPP
 
 Ouvrez le fichier `index.php` et `vehicules.php` situé à la racine de votre projet.
 
-Recherchez la section contenant les informations de connexion à la base de données. Elle pourrait ressembler à ceci : $con = new mysqli("127.0.0.1", "root", "", "concesionario");
+Recherchez la section contenant les informations de connexion à la base de données. Elle pourrait ressembler à ceci : 
+`$con = new mysqli("127.0.0.1", "root", "", "concesionario");`
 
 Importez le fichier SQL fourni avec votre projet dans votre base de données nouvellement créée. Vous pouvez le faire via l'interface de phpMyAdmin en sélectionnant votre base de données, puis en utilisant l'option d'importation pour charger le fichier SQL.
 
