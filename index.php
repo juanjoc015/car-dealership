@@ -1,5 +1,6 @@
 <?php
 
+/*$con = new mysqli("127.0.0.1", "u217569090_juan", "Ab123456", "u217569090_concesionario");*/
 $con = new mysqli("127.0.0.1", "root", "", "concesionario");
 
 if ($con->connect_errno) {
@@ -11,8 +12,6 @@ $sql = "SELECT * FROM voitures LIMIT 4";
 
 $result = mysqli_query($con, $sql);
 
-// $sqlService = "SELECT * FROM ...";
-// $resultServices = mysqli_query($con, $sqlService);
 
 ?>
 <!DOCTYPE html>
