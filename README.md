@@ -28,7 +28,7 @@ Cette plateforme en ligne permet aux utilisateurs de rechercher, comparer et ach
 
 ## Démostration
 -lien: https://juanjosecruzcano.fr/ \
-/Accueil.PNG
+![Description de l'image](Accueil.PNG)
 /Vehicules.PNG
 /Contact.PNG
 /Formulaire.PNG
