@@ -74,7 +74,7 @@ Pour exécuter et développer ce projet, les éléments suivants sont nécessair
 
 - Pour exécuter votre projet PHP, accédez à l'URL correspondant à la structure de fichiers de votre projet. Par exemple, si vous avez un fichier index.php à la racine de votre projet, accédez à http://localhost/index.php.
 
-- Votre projet PHP devrait maintenant s'exécuter dans votre navigateur.
+- Le projet PHP devrait maintenant s'exécuter dans votre navigateur.
 
 
 
