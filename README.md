@@ -45,7 +45,6 @@ Pour exécuter et développer ce projet, les éléments suivants sont nécessair
 - **Serveur MySQL** 
 - **XAMPP ou WAMP :** Un environnement de développement web qui comprend un serveur web (Apache), PHP et MySQL. Vous pouvez télécharger XAMPP à partir de [https://www.apachefriends.org/fr/index.html](https://www.apachefriends.org/fr/index.html) ou WAMP à partir de [http://www.wampserver.com/](http://www.wampserver.com/). Suivez les instructions d'installation fournies pour configurer votre environnement de développement.
 
-Assurez-vous d'avoir les versions correctes de ces outils pour éviter toute incompatibilité. Voir le fichier `requirements.txt` ou similaire pour une liste complète des dépendances du projet.
 
 ## Instructions d'exécution
 ### Configuration de la base de données
