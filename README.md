@@ -23,8 +23,8 @@ Cette plateforme en ligne permet aux utilisateurs de rechercher, comparer et ach
 - Afficher les caractéristiques des voitures.
  
 ### Contact
-- Processus d'achat en ligne.
 - Réservation de voitures.
+- Demander des informations
 
 ## Démonstration 
 **lien**: <br> https://juanjosecruzcano.fr/
